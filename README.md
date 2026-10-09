@@ -2,7 +2,7 @@
 
 Public catalog for the Little Atlas iOS app. City JSON is served by GitHub Pages. Photos are GitHub Release assets, one archive per city. Nothing in this repository is a photo.
 
-No city pack is published yet. `manifest.json` lists zero cities until a built pack is checked in.
+No city pack is published yet. `manifest.json` lists zero cities until a built pack is checked in. The app is Calgary-only until storage is settled. Calgary is the first city to publish, and no other city goes up before that.
 
 | What | Where |
 |---|---|
