@@ -19,7 +19,7 @@ The tar unpacks onto a pack root (`media/<aa>/<sha256>.webp`). The manifest fiel
 ## Publishing a city
 
 1. Build the city in LittleAtlas-iOS with `--no-legacy`. This repo must not contain `atlas.zip` or legacy-only places.
-2. Run `scripts/guard.sh` in this repo. It refuses `atlas.zip`, map extracts, WebP files, tar archives, files over 20 MB, and secret-shaped strings.
+2. Run `scripts/guard.sh` in this repo. It refuses `atlas.zip`, map extracts, WebP files, tar archives, files over 20 MB, and secret-shaped strings. A GitHub Actions copy of that check is not installed: pushing `.github/workflows/` needs a token with the `workflow` scope.
 3. Commit only `docs/manifest.json`, `docs/cities/<slug>/…/pack.json`, and any small delta JSON.
 4. From the pack root, run `release_assets.py` in the pipeline repo. Upload `<slug>-media.tar`, `<slug>-attribution.json`, and `SHA256SUMS` to the `packs` release. Do not `git add` those files.
 
