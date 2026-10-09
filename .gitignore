@@ -1,0 +1,9 @@
+*.pbf
+*.webp
+*.tar
+*.tar.tmp
+atlas.zip
+atlas.zip.part-*
+.la-cache/
+__pycache__/
+.DS_Store
